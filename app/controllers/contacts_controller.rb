@@ -1,6 +1,9 @@
 class ContactsController < ApplicationController
   def index
-    contact = Contact.new(:name => "contact", :email => "johny@robots.org")
-    contact.save()
+    @contact = Contact.first()
+  end
+
+  def new
+    contact = Contact.create(params[:contact])
   end
 end

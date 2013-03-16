@@ -1,5 +1,8 @@
 Myapp::Application.routes.draw do
-  root :to => 'contacts#index'
+  root :to => 'Contacts#new'
+
+  match 'contacts/new' => 'contacts#new'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
