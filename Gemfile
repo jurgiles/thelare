@@ -6,6 +6,7 @@ gem 'pg'
 gem 'thin'
 gem 'haml',  '~> 4.0.0'
 gem 'af'
+gem 'caldecott', '~>0.0.5'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
