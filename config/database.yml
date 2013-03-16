@@ -18,16 +18,14 @@ production:
   adapter: mysql2
   database: d9385465c931f4c0dbf8b5dcb5abdba1d
   username: uh48y2kJLySpj
-  password: pnxrk6kuNXTbar
+  password: pnxrk6kuNXTba
   pool: 5
   timeout: 5000
 
-proxied-appfog:
+appfog:
   adapter: mysql2
   database: d9385465c931f4c0dbf8b5dcb5abdba1d
   username: uh48y2kJLySpj
-  password: pnxrk6kuNXTbar
-  pool: 5
-  timeout: 5000
+  password: pnxrk6kuNXTba
   port: 10000
   host: 127.0.0.1
