@@ -1,0 +1,34 @@
+Run af login before anything below
+
+================================
+In order to be able to talk to MySQL instance on appfog
+do:
+
+af tunnel
+
+select the robots mysql service
+
+When options are displayed for which client to use:
+if you select mysql - you will be in the mysql console
+if you select none, a tunnel is opened on port 10000 on localhost
+
+Then - in order to run rake db:migrate on appfog:
+RAILS_ENV=appfog rake db:migrate
+
+or any other rails/rake command as long as its preceeded by RAILS_ENV.
+
+The tunnel is open until you exit the console on af tunnel.
+
+=====================================
+
+in order to view logs on appfog
+
+run:
+
+af files robotsinthelare logs/ - to view list of all log files available
+
+af files robotsinthelare logs/*logname to pipe log content to console
+af files robotsinthelare logs/*logname > *logname.log to save to file
+
+=====================================
+
