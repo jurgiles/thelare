@@ -1,5 +1,5 @@
 Myapp::Application.routes.draw do
-  root :to => 'main#index'
+  root :to => 'contacts#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

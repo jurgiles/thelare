@@ -12,6 +12,10 @@ gem 'af'
 
 gem 'sqlite3'
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem "nyan-cat-formatter"
+end
 
 # Gems used only for assets and not required
 # in production environments by default.
