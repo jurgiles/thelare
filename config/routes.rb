@@ -1,5 +1,5 @@
 Myapp::Application.routes.draw do
-  root :to => 'Contacts#new'
+  root :to => 'contacts#new'
 
   match 'contacts/new' => 'contacts#new'
 
