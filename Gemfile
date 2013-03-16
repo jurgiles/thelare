@@ -5,8 +5,8 @@ gem 'mysql2'
 gem 'pg'
 gem 'thin'
 gem 'haml',  '~> 4.0.0'
-gem 'af'
 gem 'caldecott', '~>0.0.5'
+gem 'simple_form', '~> 2.1.0'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -14,6 +14,7 @@ gem 'caldecott', '~>0.0.5'
 gem 'sqlite3'
 
 group :development, :test do
+  gem 'af'
   gem 'rspec-rails'
   gem "nyan-cat-formatter"
 end

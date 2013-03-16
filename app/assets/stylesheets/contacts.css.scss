@@ -1,3 +1,16 @@
 // Place all the styles related to the Contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  padding: 0 0px;
+  line-height: 64px;
+  background: #F6E128;
+  font-size: 48px;
+  font-style: bold;
+}
+
+body {
+  background-color: #ECECEC;
+}

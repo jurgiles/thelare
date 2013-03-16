@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   def index
-    @contact = Contact.first()
+    @contact = Contact.all()
   end
 
   def new

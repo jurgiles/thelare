@@ -1,9 +1,16 @@
 %h1
-  = form_for :contact do |f|
-    Name: 
-    =f.text_field :name
-    Email:
-    = f.text_field :email
-    Info:
-    = select_tag :category, options_for_select([ ['Prospective Student', 'ps'], ['Parent', 'parent'], ['Organizer', 'organizer'] ])
-    = f.submit 
+  The Lab for Robotics Education
+.container
+  #new_contact_form
+    = simple_form_for :contact do |f|
+      .text_field
+        Name: 
+        =f.text_field :name
+      .text_field
+        Email:
+        = f.text_field :email
+      .text_field
+        Info:
+        = f.text_area :message
+      #submit_button
+        = f.submit "Submit"
